@@ -1,9 +1,10 @@
 import React from "react";
+import { Form } from "react-bootstrap";
 
-export default function LabelForm(labels) {
+export default function LabelForm({label}) {
     return (
-        <label>
-            {labels}
-        </label>
+        <Form.Label>
+            {label}
+        </Form.Label>
     );
 }
